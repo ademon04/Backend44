@@ -34,6 +34,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Wait for MongoDB
+        run: |
+          for i in {1..30}; do
+            if mongosh --eval "db.runCommand({ ping: 1 })" --quiet; then
+              echo "MongoDB ready"
+              break
+            fi
+            echo "Waiting for MongoDB... ($i)"
+            sleep 2
+          done
+
       - name: Run tests
         env:
           NODE_ENV: test
