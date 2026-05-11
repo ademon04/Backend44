@@ -2,6 +2,7 @@ Noms Backend
 
 Modular compliance automation platform for Mexican Environmental and Safety Standards (NOMs) and EPA methods. Built with Node.js, Express, and MongoDB.
 
+![Tests](https://github.com/ademon04/Backend44/actions/workflows/tests.yml/badge.svg)
 
 What This Is
 Environmental compliance in Mexico requires companies to measure and report against a set of Official Mexican Standards (NOMs) — covering noise levels, lighting, electrical grounding resistance, and volatile organic compounds in industrial emissions.
@@ -85,7 +86,7 @@ DatabaseContentsappUsers, global confignom025Illumination studiesnom081Noise stu
 
 Getting Started
 Prerequisites: Node.js v24+, MongoDB running on localhost:27017
-bashgit clone https://github.com/your-username/backend_44.git
+bashgit clone https://github.com/your-username/backend44.git
 cd backend_44
 npm install
 cp .env.example .env   # fill in your values

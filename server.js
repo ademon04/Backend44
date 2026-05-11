@@ -1,7 +1,7 @@
 'use strict';
 
-const app = require('../App');
-const logger = require('../src/config/logger');
+const app = require('./App');
+const logger = require('./src/config/logger');
 
 const PORT = process.env.PORT || 3000;
 

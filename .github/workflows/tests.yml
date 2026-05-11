@@ -49,7 +49,7 @@ jobs:
         env:
           NODE_ENV: test
           MONGODB_URI: mongodb://localhost:27017
-          JWT_SECRET: test_secret_ci
+          JWT_SECRET: 
           JWT_EXPIRES_IN: 24h
           FRONTEND_URL: http://localhost:3000
           PORT: 3000
